@@ -1,8 +1,8 @@
 #----------------------------------------------------------
 # Feedback Moment: Module 2
-# Implementation of a machine learning technique without the use of a framework.
+# Implementation of a machine learning technique with the use of a framework.
 #
-# Date: 27-Aug-2023
+# Date: 11-Sep-2023
 # Author:
 #           A01753176 Gilberto André García Gaytán
 # Evaluation Metrics:
