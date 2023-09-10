@@ -7,7 +7,9 @@
 ### Loading and Preprocessing Data:
 
 **Function:** ```load_data()```
+
 **Purpose:** This function loads a CSV file, preprocesses the data, and splits it into training, validation, and test sets.
+
 **Steps:**
 1. The user is prompted to select a CSV file using a file dialog.
 2. The data is read from the CSV file.
@@ -23,7 +25,9 @@
 ### Training the Random Forest Model:
 
 **Function:** train_model(X_train, y_train)
+
 **Purpose: **This function trains a Random Forest regression model using the provided training data.
+
 **Steps:**
 1. A Random Forest Regressor model is initialized.
 2. The model is trained using the training data (X_train and y_train).
@@ -31,7 +35,9 @@
 ### Visualization and Model Evaluation:
 
 **Function:** plot_data(rf_model, X_val, y_val)
+
 **Purpose:** This function visualizes the comparison between actual and predicted prices and displays evaluation metrics.
+
 **Steps:**
 1. Predictions are made on the validation data (X_val) using the trained Random Forest model.
 2. Various metrics are calculated to evaluate the model's performance:
