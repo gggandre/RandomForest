@@ -60,7 +60,7 @@ def load_data():
     # 15% of the data goes to testing (X_test and y_test).
     X_train, X_temp, y_train, y_temp = train_test_split(X, y, test_size=0.3, random_state=42)
     X_val, X_test, y_val, y_test = train_test_split(X_temp, y_temp, test_size=0.5, random_state=42)
-    return X_train, y_train, X_val, y_val
+    return X_train, y_train, X_val, y_val, X_test, y_test
 
 # Train the Random Forest model
 def train_model(X_train, y_train):
@@ -120,7 +120,7 @@ def on_load_button_click():
     """
     The function `on_load_button_click()` loads data, trains a random forest model, and plots the data.
     """
-    X_train, y_train, X_val, y_val = load_data()
+    X_train, y_train, X_val, y_val, X_test, y_test = load_data()
     rf_model = train_model(X_train, y_train)
     plot_data(rf_model, X_val, y_val)
 
